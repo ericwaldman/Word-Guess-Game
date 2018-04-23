@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- Header & Nav Bar -->
+        <header>
+            <div class="head-wrap">
+    
+                <!-- Name Tab At Left -->
+                <h1>Word Guess Game</h1>
+    
+                <!-- Nav Buttons At Right -->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">About</a>
+                        </li>
+                        <li class="divider-space">|</li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="divider-space">|</li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class=candyWrap>
+            <!-- Candy Section -->
+            <container class="candyBox">
+            <h3>For the Love of Candy!</h3>
+            <h4>The Hangman Game where you have to guess what the Candy is!</h4>
+            <h5>* * * Push any key to start the game! * * *</h5>
+            </container>
+    
+            <!-- Game section -->
+            <div class="container clearfix">
+                
+                <div class="winner"></div>
+                
+                <p class="outterHead">10 Tries To Guess The Word.<br>Good Luck!</p>
+                <div class="dash gameText"></div>
+                
+                <p class="outterHead">Number of Guesses Left:</p>
+                <div class="counter gameText"></div>
+                
+                <p class="outterHead">Wrong Letters:</p>
+                <div class="wrongLetter gameText"></div>
+                
+                <input class="button" type="button" value="Restart Game" onClick="window.location.reload()">
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p class="copy-right">Copyright&copy;</p>
+    </footer>
+   
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #777777;
+    background-image: url('../images/candy_background.jpg');
+}
+header {
+    position: relative;
+    max-width: 100%;
+    height: 90px;
+    background: linear-gradient(#ffffff, #dddddd);
+    border-bottom: 2px #cccccc solid;
+}
+.head-wrap {
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+
+}
+section {
+    position: relative;
+    margin: 0 auto;
+    max-width: 900px;
+    background-image: url('../images/White_80_opacity.png');
+    border: 1px #dddddd solid;
+    border-bottom: none;
+    padding: 30px 30px 30px 30px;
+    margin-top: 40px;
+    margin-bottom: 90px;
+}
+
+h1 {
+    float: left;
+    height: 63px;
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 30px;
+    background-color: #4aaaa5;
+    padding: 27px 20px 0 20px;
+}
+h3 {
+    font-family: 'Chewy', cursive;
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: #f01149;
+    text-shadow: 3px 3px #000;
+}
+h4 {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 24px;
+    letter-spacing: 1px;
+}
+h5{
+    color: #f01149;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 15px;
+    letter-spacing: 1px;
+}
+.outterHead {
+    color: #f01149;
+}
+img {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+footer {
+    max-width: 100%;
+    max-height: 65px;
+    background-color: #666666;
+    border-top: 6px #4aaaa5 solid;
+    flex-shrink: 0;
+}
+.wrap {
+  flex: 1 0 auto;
+}
+section, p {
+    line-height: 18px;
+}
+nav {
+    float: right;
+}
+ul, li {
+    display: inline-block;
+    margin-top: 20px;
+}
+/* unvisited link */
+a:link {
+    color: #777777;
+    text-decoration: none;
+}
+/* visited link */
+a:visited {
+    color: #777777;
+    text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+    color: #4aaaa5;
+    text-decoration: none;
+}
+.divider-space {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.copy-right {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 10px;
+    color: #ffffff;
+}
+.clearfix {
+    overflow: auto;
+}
+.button {
+    background:none;
+    border:none;
+    width: 110px;
+    height: 40px;
+    background-color: #f01149;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+.button:hover {
+    background-color: #fc3768;
+}
+
+/* -- Candy Section -- */
+
+.gameText {
+    font-size: 24px;
+    color: #000;
+}
+    
+.candyBox {
+    display: block;
+    text-align: center;
+    max-width: 900;
+    padding: 35px 0 20px 0;
+    margin: auto;
+    border: 2px #f01149 solid;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-style: none;
+    background: linear-gradient(#f7fa48, #ffffff, #ffffff, #f7fa48);
+    opacity: 1;
+}
+.dash{
+    display: block;
+    text-align: center;
+    width: 30%;
+    padding: 35px 0 27px 0;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    border: 2px #f01149 solid;
+    border-radius: 10px;
+    background: linear-gradient(#f7fa48, #ffffff, #ffffff, #f7fa48);
+}
+.counter {
+    display: block;
+    text-align: center;
+    width: 30%;
+    padding: 35px 0 27px 0;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border: 2px #f01149 solid;
+    border-radius: 10px;
+    background: linear-gradient(#f7fa48, #ffffff, #ffffff, #f7fa48);
+}
+.wrongLetter {
+    display: block;
+    text-align: center;
+    width: 30%;
+    padding: 35px 0 27px 0;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border: 2px #f01149 solid;
+    border-radius: 10px;
+    background: linear-gradient(#f7fa48, #ffffff, #ffffff, #f7fa48);
+}
+.winner {
+    display: block;
+    background-color: #f01149;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    padding: 8px 0 10px 0;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+}
+
+
+/* -- responsive -- */
+/*@media only screen and (max-width: 980px) {
+    section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    nav {
+        margin: 0px 25px 0 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    section {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        margin-top: 100px;
+    }
+    h1 {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding: 27px 0 0 0;
+    }
+    nav {
+        float: 0;
+        position: relative;
+        width: 100%;
+        padding: 0px 0 35px 0;
+        margin: 0;
+        background: linear-gradient(#ffffff, #dddddd);
+        text-align: center;
+        color: #777777;
+        border-bottom: 2px #cccccc solid;
+    }
+    .image1 {
+        background: url(../images/business-q-c-274-206-7.jpg);
+        max-width: 100%;
+    }
+    .image2 {
+        background: url(../images/technics-q-c-274-206-2.jpg);
+        max-width: 100%;
+    }
+    .image3 {
+        background: url(../images/technics-q-c-274-206-3.jpg);
+        max-width: 100%;
+    }
+    .image4 {
+        background: url(../images/technics-q-c-274-206-5.jpg);
+        max-width: 100%;
+    }
+    .image5 {
+        background: url(../images/technics-q-c-274-206-9.jpg);
+        max-width: 100%;
+    }
+    .contact-group input,
+        .contact-group textarea {
+        width: 95%;
+    }
+}*/

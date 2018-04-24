@@ -68,6 +68,7 @@ h5{
 }
 .outterHead {
     color: #f01149;
+    font-weight: bold;
 }
 img {
     position: relative;
@@ -143,7 +144,13 @@ a:hover {
     font-size: 24px;
     color: #000;
 }
-    
+ 
+.controlsContainer {
+    position: relative;
+    float: right;
+    width: 45%;
+    margin-right: 50px;
+}
 .candyBox {
     display: block;
     text-align: center;
@@ -155,15 +162,14 @@ a:hover {
     border-top-left-radius: 10px;
     border-bottom-style: none;
     background: linear-gradient(#f7fa48, #ffffff, #ffffff, #f7fa48);
-    opacity: 1;
 }
 .dash{
     display: block;
     text-align: center;
-    width: 30%;
+    width: 100%;
     padding: 35px 0 27px 0;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     margin-top: 5px;
     border: 2px #f01149 solid;
     border-radius: 10px;
@@ -172,10 +178,10 @@ a:hover {
 .counter {
     display: block;
     text-align: center;
-    width: 30%;
+    width: 100%;
     padding: 35px 0 27px 0;
     margin: auto;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     margin-top: 5px;
     border: 2px #f01149 solid;
     border-radius: 10px;
@@ -184,10 +190,10 @@ a:hover {
 .wrongLetter {
     display: block;
     text-align: center;
-    width: 30%;
+    width: 100%;
     padding: 35px 0 27px 0;
     margin: auto;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     margin-top: 5px;
     border: 2px #f01149 solid;
     border-radius: 10px;
@@ -206,6 +212,17 @@ a:hover {
     margin-bottom: 30px;
     border-bottom-left-radius: 10px ;
     border-bottom-right-radius: 10px ;
+}
+.hangmanImage {
+    float: left;
+    display: block;
+    max-width: 260px;
+    max-height: 300px;
+    padding: 30px;
+    margin-left: 50px;
+    background-color: #ffffff;
+    border: 2px #f01149 solid;
+    border-radius: 10px;
 }
 
 

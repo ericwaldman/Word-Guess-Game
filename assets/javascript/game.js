@@ -2,7 +2,8 @@
 
 //create an array of words to guess
 var words = ['TWIX', 'MARS', 'PEZ', 'SNICKER', 'AERO', 'BOUNTY'];
-//hangman-pic - need to make array of images for hangman
+var imgs = ['hangman_start.jpg', 'hangman_1.jpg', 'hangman_2.jpg', 'hangman_3.jpg', 'hangman_4.jpg', 'hangman_5.jpg', 'hangman_6.jpg', 'hangman_7.jpg', 'hangman_8.jpg'];
+
 //choose one array word randomly
 var randomNum = Math.floor(Math.random() * words.length);
 var wordPicked = words[randomNum];
@@ -11,7 +12,7 @@ var wordPicked = words[randomNum];
 var rightLetter = [];
 var wrongLetter = [];
 var dash = [];
-var counter = 0;
+var counter = 8;
 
 //Document Object Model - update the contents on the document
 var docDash = document.getElementsByClassName('dash');
@@ -43,18 +44,21 @@ document.addEventListener('keyup',(event) => {
             docWinner[0].innerHTML = 'For the love of Candy ... You WON!';
         }
      }
+    //else wrong letter add to wrong letter list and minus one from counter
     else {
         wrongLetter.push(keyword);
         docWrongGuess[0].innerHTML = wrongLetter.join('');
-            
-        //hangman pictures
-        //document.getElementById("imageid").src = "../assets/image" + counter + ".png";
-        
-        counter = counter + 1;
+
+        counter = counter - 1;
         docCounter[0].innerHTML = counter;
         
-        if (counter > 9) {
+        //change hangman image each time player gets a guess wrong
+        //document.getElementsByClassName('hangmanImage').src = "../assets/images" + counter + imgs;
+        
+        //if counter is less then one player looses and display message
+        if (counter < 1) {
             docWinner[0].innerHTML = 'You Lost! Restart Game to play again.';
+            //break;
         }
     }
 });

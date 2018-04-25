@@ -167,7 +167,8 @@ a:hover {
     display: block;
     text-align: center;
     width: 100%;
-    padding: 35px 0 27px 0;
+    min-height: 50px;
+    padding-top: 45px;
     margin: auto;
     margin-bottom: 33px;
     margin-top: 5px;
@@ -179,7 +180,8 @@ a:hover {
     display: block;
     text-align: center;
     width: 100%;
-    padding: 35px 0 27px 0;
+    min-height: 50px;
+    padding-top: 45px;
     margin: auto;
     margin-bottom: 28px;
     margin-top: 5px;
@@ -191,7 +193,8 @@ a:hover {
     display: block;
     text-align: center;
     width: 100%;
-    padding: 35px 0 27px 0;
+    min-height: 50px;
+    padding-top: 45px;
     margin: auto;
     margin-bottom: 28px;
     margin-top: 5px;
@@ -213,13 +216,14 @@ a:hover {
     border-bottom-left-radius: 10px ;
     border-bottom-right-radius: 10px ;
 }
-.hangmanImage {
+#hangmanImage {
     float: left;
     display: block;
     max-width: 260px;
     max-height: 300px;
     padding: 30px;
     margin-left: 50px;
+    margin-top: 38px;
     background-color: #ffffff;
     border: 2px #f01149 solid;
     border-radius: 10px;
